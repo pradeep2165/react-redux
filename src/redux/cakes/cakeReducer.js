@@ -1,7 +1,7 @@
 import { BUY_CAKE } from "./cakeTypes";
 
 const initialState = {
-  numOfCake: 10,
+  numOfCakes: 10,
 };
 
 const reducer = (state = initialState, action) => {
@@ -9,7 +9,7 @@ const reducer = (state = initialState, action) => {
     case BUY_CAKE:
       return {
         ...state,
-        numOfCake: state.numOfCake - 1,
+        numOfCakes: state.numOfCakes - 1,
       };
     default:
       return state;
